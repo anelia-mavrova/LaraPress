@@ -13,7 +13,7 @@ class AdminsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['login', 'postLogin']]);
+        $this->middleware('auth', ['except' => ['login', 'postLogin', 'signup']]);
     }
 
     public function login()

@@ -123,7 +123,7 @@ class AdminPostsController extends AdminsController
         if (!$post->belongsToUser() && !\Auth::user()->admin)
         {
             session()->flash('error', 
-                'You no priviliges to perform this operation.');
+                'You have no priviliges to perform this operation.');
 
             return false;
         }
